@@ -5,15 +5,9 @@
 #include <string>
 #include <vector>
 #include <map>
-#include <type_traits>
 #include <algorithm>
-
+//Проверка кодировки
 #define Strings std::vector <std::string>
-
-bool compare(std::string const& a, std::string const& b)
-{
-	return a.size() < b.size();
-}
 
 void CompareOfString()
 {
@@ -45,6 +39,7 @@ void CompareOfString()
 			fout.close();
 		}
 	}
+
 	catch (std::bad_alloc) {
 		std::cout << "Could not allocate memory";
 	}
